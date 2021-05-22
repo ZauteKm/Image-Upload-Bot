@@ -32,3 +32,9 @@ Libraries used: => Pyrogram => Telegraph
 <a href="https://youtube.com/c/ZauteKm"><img src="https://img.shields.io/badge/YouTube-Channel-FF3333.svg?logo=youtube&logoColor=FF3333"></a>
 <p align="left">
 </p>
+
+### Credits 
+
+* [Pyrogram](https://github.com/pyrogram/pyrogram)
+* [Arun PT](https://github.com/CW4RR10R)
+* [Contributors](https://github.com/ZauteKm/Telegraph-Image-Uploader/graphs/contributors)
