@@ -35,13 +35,13 @@ async def getimage(client, message):
     if not os.path.isdir(tmp):
         os.makedirs(tmp)
     img_path = os.path.join(tmp, str(uuid.uuid4()) + ".jpg")
-    dwn = await message.reply_text("Downloading to my server...", True)
+    dwn = await message.reply_text("<b>Downloading to my server...</b>", True)
     img_path = await client.download_media(message=message, file_name=img_path)
-    await dwn.edit_text("Uploading as telegra.ph link...")
+    await dwn.edit_text("<code>Uploading as telegra.ph link...</code>")
     try:
         response = upload_file(img_path)
     except Exception as error:
-        await dwn.edit_text(f"Oops something went wrong\n{error}")
+        await dwn.edit_text(f"<b>Oops something went wrong\n Please ▷Contact @ZauteBot</b>")
         return
     await dwn.edit_text(
         text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>,\n\n<b>▷ Please Subscribe</b> ❤️ @ZauteKm",
