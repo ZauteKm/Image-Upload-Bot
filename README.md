@@ -37,4 +37,4 @@ Libraries used: => Pyrogram => Telegraph
 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
 * [Arun PT](https://github.com/CW4RR10R)
-* [Contributors](https://github.com/ZauteKm/Telegraph-Image-Uploader/graphs/contributors)
+* [Contributors](https://github.com/TGBotzK/Telegraph-Image-Uploader/graphs/contributors)
