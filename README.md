@@ -3,9 +3,9 @@
 > A simplest telegram to telegra.ph image uploader bot
 
 <a href="https://telegram.dog/TGraphZKBot"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/ZauteKm/Telegraph-Image-Uploader)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/InFoJosTel/Telegraph-Image-Uploader)
 [![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/zautebot)
-[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://telegram.dog/MizoHelpDesk)
+[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://telegram.dog/InFoJosTelGroup)
 
 ## Creds Vars 🤖
 
@@ -18,7 +18,7 @@
 ## Deploy to heroku 🗳
 Press the button Deploy to heroku and give the values for the Creds vars. 👇
 
-[![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/ZauteKm/Telegraph-Image-Uploader/tree/master)
+[![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/InFoJosTel/Telegraph-Image-Uploader/tree/master)
 
 Libraries used: => Pyrogram => Telegraph
 
@@ -37,4 +37,4 @@ Libraries used: => Pyrogram => Telegraph
 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
 * [Arun PT](https://github.com/CW4RR10R)
-* [Contributors](https://github.com/TGBotzK/Telegraph-Image-Uploader/graphs/contributors)
+* [Contributors](https://github.com/InFoJosTel/Telegraph-Image-Uploader/graphs/contributors)
