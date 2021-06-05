@@ -21,11 +21,11 @@ TGraph = Client(
 @TGraph.on_message(filters.command("start"))
 async def start(client, message):
     await message.reply_text(
-        text=f"Hello {message.from_user.first_name}!\n<b>I am Telegram to telegra.ph Image Uploader bot by @TGBotSzK</b>\n\n▷ Just give me a media under 5MB.\n▷ Then I will download it.\n▷ I will then upload it to the telegra.ph link.",
+        text=f"Hello {message.from_user.first_name}!\n<b>I am Telegram to telegra.ph Image Uploader bot by @InFoJosTel</b>\n\n▷ Just give me a media under 5MB.\n▷ Then I will download it.\n▷ I will then upload it to the telegra.ph link.",
         disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🙆🏻‍♂️ Report Bugs", url=f"https://t.me/zautebot"), InlineKeyboardButton(text="Channel 📢", url=f"https://t.me/ZauteKm"), ],
-                                           [InlineKeyboardButton(text="🤫 Source", url=f"https://githup.com/ZauteKm/Telegraph-Image-Uploader"), InlineKeyboardButton(text="Music 👨‍🎤", url=f"https://t.me/joinchat/7gSUxv6vgQE3M2Fl"), InlineKeyboardButton(text="Bot Lists 🤖", url=f"https://t.me/TG_BotList/37"),],
-                                           [InlineKeyboardButton(text="⚜️ Subscribe Now YouTube ⚜️", url=f"http://youtube.com/c/MizoHelpDesk")]])
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🙆🏻‍♂️ Report Bugs", url=f"https://t.me/InFoJosTelGroup"), InlineKeyboardButton(text="Channel 📢", url=f"https://t.me/ZauteKm"), ],
+                                           [InlineKeyboardButton(text="🤫 Source", url=f"https://githup.com/InFoJosTel/Telegraph-Image-Uploader"), InlineKeyboardButton(text="Music 👨‍🎤", url=f"https://t.me/joinchat/7gSUxv6vgQE3M2Fl"), InlineKeyboardButton(text="Bot Lists 🤖", url=f"https://t.me/TG_BotList/37"),],
+                                           [InlineKeyboardButton(text="⚜️ Subscribe Now YouTube ⚜️", url=f"https://youtube.com/playlist?list=PLzkiTywVmsSfmhaDdWNZ5PRmmMKGTIxPJ")]])
         )
 
 
