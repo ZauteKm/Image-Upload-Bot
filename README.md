@@ -3,9 +3,9 @@
 > A simplest telegram to telegra.ph image uploader bot
 
 <a href="https://telegram.dog/TGraphZKBot"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/InFoJosTel/Telegraph-Image-Uploader)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/ZauteKm/Telegraph-Image-Uploader)
 [![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/zautebot)
-[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://telegram.dog/InFoJosTelGroup)
+[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://t.me/iZaute/5)
 
 ## Creds Vars 🤖
 
@@ -18,7 +18,7 @@
 ## Deploy to heroku 🗳
 Press the button Deploy to heroku and give the values for the Creds vars. 👇
 
-[![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/InFoJosTel/Telegraph-Image-Uploader/tree/master)
+[![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/ZauteKm/Telegraph-Image-Uploader/tree/master)
 
 Libraries used: => Pyrogram => Telegraph
 
@@ -28,7 +28,7 @@ Libraries used: => Pyrogram => Telegraph
 <img src="https://badgen.net/badge/Name/ZauteKm/FF33FF?icon=awesome&labelColor=0080FF"></a>
 <img src="https://badgen.net/badge/Skills/python/purple?icon=terminal&labelColor=red"></a>
 <a href="https://telegram.dog/Zautebot"><img src="https://img.shields.io/badge/Telegram-Link-blue.svg?logo=telegram"></a>
-<a href="https://github.com/ZauteKm"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=black"></a>
+<a href="https://github.com/Zaute-Km"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=black"></a>
 <a href="https://youtube.com/c/ZauteKm"><img src="https://img.shields.io/badge/YouTube-Channel-FF3333.svg?logo=youtube&logoColor=FF3333"></a>
 <p align="left">
 </p>
@@ -37,4 +37,4 @@ Libraries used: => Pyrogram => Telegraph
 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
 * [Arun PT](https://github.com/CW4RR10R)
-* [Contributors](https://github.com/InFoJosTel/Telegraph-Image-Uploader/graphs/contributors)
+* [Contributors](https://github.com/ZauteKm/Telegraph-Image-Uploader/graphs/contributors)
