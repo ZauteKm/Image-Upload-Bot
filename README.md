@@ -18,7 +18,7 @@
 ## Deploy to heroku 🗳
 Press the button Deploy to heroku and give the values for the Creds vars. 👇
 
-[![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/ZauteKm/TGraph-Image-Uploader/tree/master)
+[![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/ZauteKm/Image-Uploader/tree/master)
 
 Libraries used: => Pyrogram => Telegraph
 
@@ -37,4 +37,4 @@ Libraries used: => Pyrogram => Telegraph
 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
 * [Arun PT](https://github.com/CW4RR10R)
-* [Contributors](https://github.com/ZauteKm/Telegraph-Image-Uploader/graphs/contributors)
+* [Contributors](https://github.com/ZauteKm/Image-Uploader/graphs/contributors)
