@@ -67,12 +67,18 @@ Made with by ❤️ @ZauteKm"""
 
 ABOUT_TEXT = """--**About Me**-- 😎
 
-🤖 **Name :** [Telegraph Uploader](https://telegram.me/TGraphzKBot)
+🤖 **Name :** [TGraphRoBot](https://telegram.me/TGraphRoBot)
+
 👨‍💻 **Developer :** [Zaute](https://github.com/ZauteKm)
+
 📢 **Channel :** [TGBotsProJect](https://telegram.me/TGBotsProJect)
+
 👥 **Feedback :** [Contact here](https://telegram.me/ZauteBot)
+
 🌐 **Source :** [👉 Click here](https://github.com/ZauteKm/Image-Upload-Bot)
+
 📝 **Language :** [Python3](https://python.org)
+
 🧰 **Framework :** [Pyrogram](https://pyrogram.org)"""
 
 FORCE_SUBSCRIBE_TEXT = "<b>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</b>"
@@ -204,7 +210,7 @@ async def telegraph_upload(bot, update):
             print(error)
             await update.reply_text(text="Something wrong. Contact <a href='https://telegram.me/zautebot'>Developer</a>.", disable_web_page_preview=True)
             return
-    medianame = "./DOWNLOADS/" + "ZauteKm/TGraphzKBot"
+    medianame = "./DOWNLOADS/" + "ZauteKm/TGraphRoBot"
     text = await update.reply_text(
         text="<code>Downloading to My Server ...</code>",
         disable_web_page_preview=True
@@ -232,7 +238,7 @@ async def telegraph_upload(bot, update):
         print(error)
         return
     await text.edit_text(
-        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @FayasNoushad",
+        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Thank You For Using Me:- \nPlease Subscribe ❤️ [@ZauteKm](https://t.me/iZaute/6)</b>",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -240,7 +246,7 @@ async def telegraph_upload(bot, update):
                     InlineKeyboardButton(text="🔗 Open Link", url=f"https://telegra.ph{response[0]}"),
                     InlineKeyboardButton(text="Share Link 👥", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
                 ],
-                [InlineKeyboardButton(text="❤️ Share & Support Me ❤️", url="https://t.me/share/url?url=Hi%20Friend%2C%0D%0AAm%20Introducing%20a%20Powerful%20%2A%2ATelegraph%20Image%20Upload%20Bot%2A%2A%20for%20Free.%0D%0A%2A%2ABot%20Link%2A%2A%20%3A%20%40TGraphZKbot")]
+                [InlineKeyboardButton(text="❤️ Share & Support Me ❤️", url="https://t.me/share/url?url=Hi%20Friend%2C%0D%0AAm%20Introducing%20a%20Powerful%20%2A%2ATelegraph%20Image%20Upload%20Bot%2A%2A%20for%20Free.%0D%0A%2A%2ABot%20Link%2A%2A%20%3A%20%40TGraphRobot")]
             ]
         )
     )
