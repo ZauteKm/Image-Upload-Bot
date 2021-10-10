@@ -1,4 +1,6 @@
-pyrogram>=1.0.0
-telegraph==1.4.1
+pyrogram
 tgcrypto
-python-dotenv
+telegraph
+motor
+aiofiles
+dnspython
