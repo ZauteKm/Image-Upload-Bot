@@ -7,18 +7,19 @@
 [![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/zautebot)
 [![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://t.me/iZaute/5)
 
-## Creds Vars 🤖
+## Variables
 
-- `API_HASH:` Get this value from [my.telegram.org](https://my.telegram.org) or [@UseTGzKBot <img src="https://telegra.ph/file/23d7c928f000aee982a4a.jpg" width="30" height="30">](https://telegram.dog/UseTGzKbot).
-
-- `API_ID:` Get this value from [my.telegram.org](https://my.telegram.org) or [@UseTGzKBot <img src="https://telegra.ph/file/23d7c928f000aee982a4a.jpg" width="30" height="30">](https://telegram.dog/UseTGzKbot).
-
-- `BOT_TOKEN:` Get the bot token from [Bot Father <img src="https://telegra.ph/file/8d80c13110506bf1cb58e.jpg" width="30" height="30">](https://telegram.dog/BotFather)
+1. `API_HASH`: Get this value from [my.telegram.org](https://my.telegram.org)
+2. `API_ID`: Get this value from [my.telegram.org](https://my.telegram.org)
+3. `BOT_TOKEN`: Get the bot token from [Bot Father](https://t.me/botfather)
+4. `BOT_OWNER`: Bot Owner ID Get from [ShowJson_Robot](https://t.me/ShowJson_Robot)
+5. `DATABASE_URL`: MongoDB URL Get from [here](https://www.mongodb.com/)
+6. `UPDATE_CHANNEL`: ID of channel. Without subscribing this channel users cannot use bot.
 
 ## Deploy to heroku 🗳
 Press the button Deploy to heroku and give the values for the Creds vars. 👇
 
-[![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/ZauteKm/Image-Uploader/tree/master)
+[![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/ZauteKm/Image-Upload-Bot/tree/master)
 
 Libraries used: => Pyrogram => Telegraph
 
@@ -37,4 +38,4 @@ Libraries used: => Pyrogram => Telegraph
 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
 * [Arun PT](https://github.com/CW4RR10R)
-* [Contributors](https://github.com/ZauteKm/Image-Uploader/graphs/contributors)
+* [Contributors](https://github.com/ZauteKm/Image-Upload-Bot/graphs/contributors)
