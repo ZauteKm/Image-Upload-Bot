@@ -3,7 +3,7 @@
 > A simplest telegram to telegra.ph image uploader bot
 
 <a href="https://telegram.dog/TGraphZKBot"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/ZauteKm/TGraph-Image-Uploader)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/ZauteKm/Image-Upload-Bot)
 [![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/zautebot)
 [![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://t.me/iZaute/5)
 
@@ -21,6 +21,15 @@ Press the button Deploy to heroku and give the values for the Creds vars. 👇
 
 [![Deploy](https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku)](https://heroku.com/deploy?template=https://github.com/ZauteKm/Image-Upload-Bot/tree/master)
 
+### Deploy in your VPS
+```sh
+git clone https://github.com/ZauteKm/Image-Upload-Bot
+cd Image-Upload-Bot
+pip3 install -r requirements.txt
+# <Create Variables appropriately>
+python3 main.py
+```
+
 Libraries used: => Pyrogram => Telegraph
 
 ## Dev Details 👤:
@@ -29,11 +38,29 @@ Libraries used: => Pyrogram => Telegraph
 <img src="https://badgen.net/badge/Name/ZauteKm/FF33FF?icon=awesome&labelColor=0080FF"></a>
 <img src="https://badgen.net/badge/Skills/python/purple?icon=terminal&labelColor=red"></a>
 <a href="https://telegram.dog/Zautebot"><img src="https://img.shields.io/badge/Telegram-Link-blue.svg?logo=telegram"></a>
-<a href="https://github.com/Zaute-Km"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=black"></a>
+<a href="https://github.com/ZauteKm"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=black"></a>
 <a href="https://youtube.com/c/ZauteKm"><img src="https://img.shields.io/badge/YouTube-Channel-FF3333.svg?logo=youtube&logoColor=FF3333"></a>
 <p align="left">
 </p>
 
+
+## License
+```sh
+#!/usr/bin/env python3
+# Copyright (C) @ZauteKm
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
 ### Credits 
 
 * [Pyrogram](https://github.com/pyrogram/pyrogram)
