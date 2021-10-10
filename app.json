@@ -1,5 +1,5 @@
 {
-  "name": "Telegraph Uploader",
+  "name": "Image-Upload-Bot",
   "description": "A bot to Upload Telegram Images to telegraph",
   "repository": "https://github.com/ZauteKm/Image-Uploader",
   "logo": "https://telegra.ph/file/fc9136f02541ac58c96e0.jpg",
@@ -9,10 +9,19 @@
       "description": "Your Bot token from @Botfather"
     },
     "API_ID": {
-      "description": "Your API_ID from https://my.telegram.org/apps or @UseTGzKbot"
+      "description": "Your API_ID from https://my.telegram.org/apps"
     },
     "API_HASH": {
-      "description": "Your API_HASH from https://my.telegram.org/apps or @UseTGzKbot"
+      "description": "Your API_HASH from https://my.telegram.org/apps"
+    },
+     "BOT_OWNER": {
+      "description": "Bot owner ID"
+    },
+     "DATABASE_URL": {
+      "description": "MongoDB URL"
+    },
+     "UPDATE_CHANNEL": {
+      "description": "ID of channel. Without subscribing this channel users cannot use bot."
     }
    },
    "buildpacks": [
