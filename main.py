@@ -34,7 +34,7 @@ from database import Database
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
 BOT_OWNER = int(os.environ["BOT_OWNER"])
 DATABASE_URL = os.environ["DATABASE_URL"]
-db = Database(DATABASE_URL, "TGraphzKBot")
+db = Database(DATABASE_URL, "TGraphRoBot")
 
 Bot = Client(
     "Telegraph Uploader Bot",
@@ -71,9 +71,9 @@ ABOUT_TEXT = """--**About Me**-- 😎
 
 👨‍💻 **Developer :** [Zaute](https://github.com/ZauteKm)
 
-📢 **Channel :** [TGBotsProJect](https://telegram.me/TGBotsProJect)
+📢 **Channel :** [TGBotsProJect](https://telegram.me/josprojects)
 
-👥 **Feedback :** [Contact here](https://telegram.me/ZauteBot)
+👥 **Feedback :** [Contact here](https://telegram.me/jospsupportbot)
 
 🌐 **Source :** [👉 Click here](https://github.com/ZauteKm/Image-Upload-Bot)
 
@@ -85,7 +85,7 @@ FORCE_SUBSCRIBE_TEXT = "<b>Sorry Dear You Must Join My Updates Channel for using
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🖲️ Help', callback_data='help'),
+        InlineKeyboardButton('❗ Help', callback_data='help'),
         InlineKeyboardButton('About 🤖', callback_data='about'),
         ],
         [
