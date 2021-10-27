@@ -213,7 +213,7 @@ async def telegraph_upload(bot, update):
     medianame = "./DOWNLOADS/" + "ZauteKm/TGraphRoBot"
     text = await update.reply_text(
         text="<code>Downloading to My Server ...</code>",
-        disable_web_page_preview=True, reply_to_message_id=update.message_id)
+        disable_web_page_preview=True, reply_to_message_id=update.message_id
     )
     await bot.download_media(
         message=update,
