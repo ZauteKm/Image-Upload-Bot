@@ -49,7 +49,7 @@ I am small media or file to telegra.ph link uploader bot.**
 
 >> I can convert under 5MB photo or video to telegraph link.
 
-**Click Help Button or hits /help for more Info.**"""
+**Tap help button or hits /help for more Info.**"""
 
 HELP_TEXT = """**Hey, Follow these steps:**
 
@@ -62,13 +62,13 @@ ABOUT_TEXT = """--**About Me**-- 😎
 
 🤖 **Name :** [TGraphRoBot](https://telegram.me/TGraphRoBot)
 
-👨‍💻 **Developer :** [Zaute](https://github.com/ZauteKm)
+👨‍💻 **Developer :** [Zaute](https://t.me/zautekm)
 
 📢 **Channel :** [Jos Projects](https://telegram.me/josprojects)
 
-👥 **Feedback :** [Contact here](https://telegram.me/jospsupportbot)
+👥 **Feedback :** [Tap here](https://telegram.me/jospsupportbot)
 
-🌐 **Source :** [👉 Click here](https://github.com/ZauteKm/Image-Upload-Bot)
+🌐 **Source :** [👉 Press me](https://github.com/ZauteKm/Image-Upload-Bot)
 
 📝 **Language :** [Python3](https://python.org)
 
