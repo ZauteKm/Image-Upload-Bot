@@ -47,23 +47,22 @@ START_TEXT = """**Hello {}
 
 I am small media or file to telegra.ph link uploader bot.**
 
->> `I can convert under 5MB photo or video to telegraph link.`
+>> I can convert under 5MB photo or video to telegraph link.
 
-Made with by ❤️ @ZauteKm"""
+**Click Help Button or hits /help for more Information."""
 
 HELP_TEXT = """**Hey, Follow these steps:**
 
-▷ Just give me a media under 5MB
-▷ Then I will download it
-▷ I will then upload it to the telegra.ph link
+▷ Just give me a media under 5MB.
+▷ Then I will download it.
+▷ I will then upload it to the telegra.ph link.
 
 **Available Commands**
-/start - Checking Bot Online
-/help - For more help
-/about - For more about me
-/status - For bot updates
-
-Made with by ❤️ @ZauteKm"""
+/start - Checking Bot Online.
+/help - For more help.
+/about - For more about me.
+/status - For bot updates.
+"""
 
 ABOUT_TEXT = """--**About Me**-- 😎
 
@@ -71,7 +70,7 @@ ABOUT_TEXT = """--**About Me**-- 😎
 
 👨‍💻 **Developer :** [Zaute](https://github.com/ZauteKm)
 
-📢 **Channel :** [TGBotsProJect](https://telegram.me/josprojects)
+📢 **Channel :** [Jos Projects](https://telegram.me/josprojects)
 
 👥 **Feedback :** [Contact here](https://telegram.me/jospsupportbot)
 
