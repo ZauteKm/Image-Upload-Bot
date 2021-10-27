@@ -208,7 +208,7 @@ async def telegraph_upload(bot, update):
             return
         except Exception as error:
             print(error)
-            await update.reply_text(text="Something wrong. Contact <a href='https://telegram.me/zautebot'>Developer</a>.", disable_web_page_preview=True), reply_to_message_id=update.message_id)
+            await update.reply_text(text="Something wrong. Contact <a href='https://telegram.me/zautebot'>Developer</a>.", disable_web_page_preview=True), reply_to_message_id=update.message_id
             return
     medianame = "./DOWNLOADS/" + "ZauteKm/TGraphRoBot"
     text = await update.reply_text(
@@ -229,7 +229,7 @@ async def telegraph_upload(bot, update):
         print(error)
         await text.edit_text(
             text=f"Error :- {error}",
-            disable_web_page_preview=True, reply_to_message_id=update.message_id)
+            disable_web_page_preview=True, reply_to_message_id=update.message_id
         )
         return
     try:
@@ -239,7 +239,7 @@ async def telegraph_upload(bot, update):
         return
     await text.edit_text(
         text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Thank You For Using Me:- \nPlease Subscribe ❤️ [@ZauteKm](https://t.me/iZaute/6)</b>",
-        disable_web_page_preview=True, reply_to_message_id=update.message_id),
+        disable_web_page_preview=True, reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
