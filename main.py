@@ -221,7 +221,7 @@ async def telegraph_upload(bot, update):
     )
     await text.edit_text(
         text="<code>Downloading Completed. Now I am Uploading to telegra.ph Link ...</code>",
-        disable_web_page_preview=True, reply_to_message_id=update.message_id,
+        disable_web_page_preview=True,
     )
     try:
         response = upload_file(medianame)
@@ -229,7 +229,7 @@ async def telegraph_upload(bot, update):
         print(error)
         await text.edit_text(
             text=f"Error :- {error}",
-            disable_web_page_preview=True, reply_to_message_id=update.message_id,
+            disable_web_page_preview=True,
         )
         return
     try:
@@ -239,7 +239,7 @@ async def telegraph_upload(bot, update):
         return
     await text.edit_text(
         text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Thank You For Using Me:- \nPlease Subscribe ❤️ [@ZauteKm](https://t.me/iZaute/6)</b>",
-        disable_web_page_preview=True, reply_to_message_id=update.message_id,
+        disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
