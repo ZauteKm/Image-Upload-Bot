@@ -49,19 +49,13 @@ I am small media or file to telegra.ph link uploader bot.**
 
 >> I can convert under 5MB photo or video to telegraph link.
 
-**Click Help Button or hits /help for more Information."""
+**Click Help Button or hits /help for more Info.**"""
 
 HELP_TEXT = """**Hey, Follow these steps:**
 
 ▷ Just give me a media under 5MB.
 ▷ Then I will download it.
 ▷ I will then upload it to the telegra.ph link.
-
-**Available Commands**
-/start - Checking Bot Online.
-/help - For more help.
-/about - For more about me.
-/status - For bot updates.
 """
 
 ABOUT_TEXT = """--**About Me**-- 😎
