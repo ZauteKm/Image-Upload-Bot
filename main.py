@@ -221,7 +221,7 @@ async def telegraph_upload(bot, update):
     )
     await text.edit_text(
         text="<code>Downloading Completed. Now I am Uploading to telegra.ph Link ...</code>",
-        disable_web_page_preview=True, reply_to_message_id=update.message_id)
+        disable_web_page_preview=True, reply_to_message_id=update.message_id
     )
     try:
         response = upload_file(medianame)
