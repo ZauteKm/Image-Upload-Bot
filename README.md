@@ -1,4 +1,4 @@
-# Telegraph Image Uploader
+# Telegraph Image Upload-Bot
 
 > A simplest telegram to telegra.ph image uploader bot
 
