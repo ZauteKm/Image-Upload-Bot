@@ -198,10 +198,6 @@ async def telegraph_upload(bot, update):
     FSub = await ForceSub(bot, update)
     if FSub == 400:
         return
-        except Exception as error:
-            print(error)
-            await update.reply_text(text="Something wrong. Contact <a href='https://telegram.me/zautebot'>Developer</a>.", disable_web_page_preview=True)
-            return
     medianame = "./DOWNLOADS/" + "ZauteKm/TGraphRoBot"
     text = await update.reply_text(
         text="<code>Downloading to My Server ...</code>",
