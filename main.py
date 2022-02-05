@@ -22,16 +22,17 @@ import traceback
 import asyncio
 import datetime
 import aiofiles
-from random import choice 
+from random import choice
+
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid, UserNotParticipant, UserBannedInChannel
 from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
 from telegraph import upload_file
 from database import Database
 
 
-UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
+UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
 BOT_OWNER = int(os.environ["BOT_OWNER"])
 DATABASE_URL = os.environ["DATABASE_URL"]
 db = Database(DATABASE_URL, "TGraphRoBot")
@@ -152,6 +153,9 @@ async def cb_handler(bot, update):
 async def start(bot, update):
     if not await db.is_user_exist(update.from_user.id):
 	    await db.add_user(update.from_user.id)
+    FSub = await ForceSub(bot, update)
+    if FSub == 400:
+        return
     await update.reply_text(
         text=START_TEXT.format(update.from_user.mention),
         disable_web_page_preview=True,
@@ -163,6 +167,9 @@ async def start(bot, update):
 async def help(bot, update):
     if not await db.is_user_exist(update.from_user.id):
 	    await db.add_user(update.from_user.id)
+    FSub = await ForceSub(bot, update)
+    if FSub == 400:
+        return
     await update.reply_text(
         text=HELP_TEXT,
       	disable_web_page_preview=True,
@@ -174,6 +181,9 @@ async def help(bot, update):
 async def about(bot, update):
     if not await db.is_user_exist(update.from_user.id):
 	    await db.add_user(update.from_user.id)
+    FSub = await ForceSub(bot, update)
+    if FSub == 400:
+        return
     await update.reply_text(
         text=ABOUT_TEXT.format((await bot.get_me()).username),
         disable_web_page_preview=True,
@@ -185,20 +195,9 @@ async def about(bot, update):
 async def telegraph_upload(bot, update):
     if not await db.is_user_exist(update.from_user.id):
 	    await db.add_user(update.from_user.id)
-    if UPDATE_CHANNEL:
-        try:
-            user = await bot.get_chat_member(UPDATE_CHANNEL, update.chat.id)
-            if user.status == "kicked":
-                await update.reply_text(text="You are banned!")
-                return
-        except UserNotParticipant:
-            await update.reply_text(
-		  text=FORCE_SUBSCRIBE_TEXT,
-		  reply_markup=InlineKeyboardMarkup(
-			  [[InlineKeyboardButton(text="📢 Join My Updates Channel 📢", url=f"https://telegram.me/{UPDATE_CHANNEL}")]]
-		  )
-	    )
-            return
+    FSub = await ForceSub(bot, update)
+    if FSub == 400:
+        return
         except Exception as error:
             print(error)
             await update.reply_text(text="Something wrong. Contact <a href='https://telegram.me/zautebot'>Developer</a>.", disable_web_page_preview=True)
@@ -299,6 +298,62 @@ async def status(bot, update):
         quote=True,
         disable_web_page_preview=True
     )
+
+
+async def ForceSub(bot: Client, event: Message):
+    """
+    Custom Pyrogram Based Telegram Bot's Force Subscribe Function by @ZauteKm.
+    If User is not Joined Force Sub Channel Bot to Send a Message & ask him to Join First.
+    
+    :param bot: Pass Client.
+    :param event: Pass Message.
+    :return: It will return 200 if Successfully Got User in Force Sub Channel and 400 if Found that User Not Participant in Force Sub Channel or User is Kicked from Force Sub Channel it will return 400. Also it returns 200 if Unable to Find Channel.
+    """
+    
+    try:
+        invite_link = await bot.create_chat_invite_link(chat_id=(int(UPDATES_CHANNEL) if UPDATES_CHANNEL.startswith("-100") else UPDATES_CHANNEL))
+    except FloodWait as e:
+        await asyncio.sleep(e.x)
+        fix_ = await ForceSub(bot, event)
+        return fix_
+    except Exception as err:
+        print(f"Unable to do Force Subscribe to {Config.UPDATES_CHANNEL}\n\nError: {err}\n\nContact Support Group: https://t.me/JOSPSupport")
+        return 200
+    try:
+        user = await bot.get_chat_member(chat_id=(int(UPDATES_CHANNEL) if UPDATES_CHANNEL.startswith("-100") else UPDATES_CHANNEL), user_id=event.from_user.id)
+        if user.status == "kicked":
+            await bot.send_message(
+                chat_id=event.from_user.id,
+                text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/Jospsupport).",
+                parse_mode="markdown",
+                disable_web_page_preview=True,
+                reply_to_message_id=event.message_id
+            )
+            return 400
+        else:
+            return 200
+    except UserNotParticipant:
+        await bot.send_message(
+            chat_id=event.from_user.id,
+            text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                    ]
+                ]
+            ),
+            parse_mode="markdown",
+            reply_to_message_id=event.message_id
+        )
+        return 400
+    except FloodWait as e:
+        await asyncio.sleep(e.x)
+        fix_ = await ForceSub(bot, event)
+        return fix_
+    except Exception as err:
+        print(f"Something Went Wrong! Unable to do Force Subscribe.\nError: {err}\n\nContact Support Group: https://t.me/JOSPSupport")
+        return 200
 
 
 Bot.run()
